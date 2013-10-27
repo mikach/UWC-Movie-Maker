@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Maker</title>
+    <link rel="stylesheet" href="styles/base.css" />
+</head>
+<body>
+    <header>
+        <h1>Movie Maker</h1>
+        <div class="menu">
+            <span>Load project <input type="file" id="projectInput" /></span>
+            <b>OR</b>&nbsp;
+            <button id="save">Save project</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="frame">
+            <img />
+        </div>
+        <div id="controls">
+            <button class="play">Play</button>
+            <button class="pause">Pause</button>
+            <button class="fullscreen">Fullscreen</button>
+            <br />
+            Volume: <input class="volume" type="range" min="1" max="100" value="100" /><span>100%</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Tracks: <input type="file" id="trackInput" value="Load New Track" /></p>
+        <div class="trackline">
+            <span>0s</span>
+            <div class="line"></div>
+        </div>
+        <div class="tracks">
+        </div>
+    </footer>
+    <script src="js/libs/jquery-1.10.2.min.js"></script>
+    <script src="js/timeLine.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

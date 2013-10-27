@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    background-color: #eee;
+}
+
+a {
+    color: #0088CC;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #CCCCCC;
+}
+header h1 {
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    line-height: 40px;
+    width: 320px;
+    float: left;
+}
+header .menu {
+    float: left;
+    line-height: 40px;
+}
+
+.container {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#frame {
+    width: 320px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px #CCCCCC;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+#frame img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+    
+footer p {
+    margin-left: 10px;
+}
+.tracks {
+    width: 100%;
+    min-height: 200px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.track {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    position: relative;
+}
+.track [data-type] {
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: move;
+}
+.track [data-type=image] {
+    background-color: #2D8F20;
+}
+.track [data-type=image] img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+}
+.track [data-type=audio] {
+    background-color: #0052AA;
+}
+
+.trackline {
+    width: 100%;
+    height: 15px;
+    background-color: #ccc;
+    position: relative;
+}
+.trackline span {
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    left: 0px;
+    line-height: 15px;
+}
+.trackline .line {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 5px;
+    height: 15px;
+    background-color: red;
+}
