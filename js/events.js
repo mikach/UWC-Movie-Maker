@@ -94,6 +94,7 @@
 
     // Save project
     $('#save').on('click', function() {
+        TimeLine.pause();
         var json = TimeLine.toJSON();
         var blob = new Blob([JSON.stringify(json)], { type: 'application/octet-binary' });
         var url = URL.createObjectURL(blob);
