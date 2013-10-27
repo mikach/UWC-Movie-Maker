@@ -265,6 +265,7 @@
 
     // Clear all timeline's settings
     TimeLine.reset = function() {
+        TimeLine.pause();
         TimeLine._tracks = [];
         TimeLine.currentAudio = null;
         TimeLine.$el.html('');
